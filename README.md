@@ -60,13 +60,13 @@ All tests run at **α = 0.05**, two-sided. Effect size reported as rank-biserial
 
 | KPI | Test Result | Effect Size (r) | Business Interpretation |
 |-----|-------------|-----------------|------------------------|
-| Click-Through Rate (CTR) | **Significant** ✅ | Moderate | Test campaign meaningfully shifted top-of-funnel engagement |
-| Add-to-Cart Rate | **Significant** ✅ | Moderate | Test campaign improved mid-funnel purchase intent |
-| Conversion Rate | Not Significant ❌ | Negligible | Bottom-line purchase rate unchanged between campaigns |
-| Cost per Click (CPC) | Not Significant ❌ | Negligible | Spend efficiency per click is statistically equivalent |
-| Cost per Purchase (CPP) | Not Significant ❌ | Negligible | Revenue efficiency per acquisition is statistically equivalent |
+| Click-Through Rate (CTR) | **Significant**  | Moderate | Test campaign meaningfully shifted top-of-funnel engagement |
+| Add-to-Cart Rate | **Significant**  | Moderate | Test campaign improved mid-funnel purchase intent |
+| Conversion Rate | Not Significant  | Negligible | Bottom-line purchase rate unchanged between campaigns |
+| Cost per Click (CPC) | Not Significant  | Negligible | Spend efficiency per click is statistically equivalent |
+| Cost per Purchase (CPP) | Not Significant  | Negligible | Revenue efficiency per acquisition is statistically equivalent |
 
-> **Strategic Recommendation:** The Test campaign successfully improves top and mid-funnel metrics (CTR, Add-to-Cart Rate), but these gains do not translate into higher final conversion rates. Before scaling the Test campaign budget, stakeholders should investigate the **Add-to-Cart → Purchase drop-off** — this bottleneck is the critical unsolved problem. Scaling spend on a campaign that does not improve final conversion would increase cost without proportional revenue gain.
+> **Strategic Recommendation:** The Test campaign successfully improves top and mid-funnel metrics (CTR, Add-to-Cart Rate), but these gains do not translate into higher final conversion rates. Do not scale the Test campaign budget yet. Higher CTR at equal conversion rate = more spend for identical revenue. Priority action: audit the Add-to-Cart → Purchase step and run a checkout UX A/B test before any budget reallocation.
 
 ---
 
@@ -84,7 +84,7 @@ ab-testing-marketing/
 │   └── ABTesting.ipynb             # Full analysis narrative — primary deliverable
 ├── src/
 │   ├── __init__.py
-│   └── data_processing.py          # Reusable preprocessing and KPI functions
+│   └── preprocessing.py          # Reusable preprocessing and KPI functions
 ├── requirements.txt
 └── README.md
 ```
