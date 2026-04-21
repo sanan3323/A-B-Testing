@@ -106,7 +106,7 @@ source venv/bin/activate          # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # 4. Launch the notebook
-jupyter notebook notebooks/ABTesting.ipynb
+jupyter notebook notebooks/ab-testing.ipynb
 ```
 
 **Requirements:** Python 3.9+, pandas, numpy, scipy, seaborn, matplotlib, jupyter
