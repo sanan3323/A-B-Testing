@@ -72,9 +72,8 @@ ab-testing-marketing/
 └── data/
     ├── raw/
     │   ├── control_group.csv
-    │   └── test_group.csv
-    └── processed/
-        └── ab_combined.csv
+    └── └── test_group.csv
+    
 ```
 
 ## Run it
